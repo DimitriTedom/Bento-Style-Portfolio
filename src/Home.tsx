@@ -1,21 +1,20 @@
-import { Button } from "@/components/ui/button"
-
+import { Helmet } from "react-helmet-async";
 export default function Home() {
   return (
-    <div className='text-2xl items-center justify-center flex flex-col w-full h-full '>
-      <h1 className="underline font-extrabold ">
-        Here's a TEMPLATE WITH THE FOLLOWING DEPENDENCIES:</h1>
-      <ol>
-                <li>SHADCN</li>
-                <li>PRISMA</li>
-                <li>REACT-ICONS</li>
-                <li>ZUSTAND</li>
-                <li>TAILWINDCSS</li>
-                <li>REACT JS WITH VITE</li>
-            </ol>
-            Created by @DimitriTedom alias SnowDev for Code Lovers !!!
-      <Button>Here is a SHadCn button</Button>
+    <>
+      <Helmet>
+        <title>Home-Bento-Style-Portfolio</title>
+        <meta
+          name="description"
+          content="Bienvenue sur la page d'accueil de Mon Site."
+        />
+        <meta property="og:title" content="Accueil - Mon Site" />
+        <meta
+          property="og:description"
+          content="Bienvenue sur Mon Site, explorez nos services."
+        />
+      </Helmet>
 
-    </div>
-  )
+    </>
+  );
 }

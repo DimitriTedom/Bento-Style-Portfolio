@@ -27,7 +27,12 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
+    --bg-Color: rgba(22, 22, 22, 1);
+    --card-bg-color:rgba(27, 27, 27, 1);
+    --Primary-text-Color:rgba(255, 255, 255, 1);
+    --secondary-text-color:rgba(243, 80, 52, 1);
+    --tertiary-text-color:rgba(192, 192, 192, 1);
   }
   .dark {
     --background: 240 10% 3.9%;
