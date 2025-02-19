@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -63,9 +64,43 @@
 }
 @layer base {
   * {
-    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-bgColor text-PrimTextColor p-6 w-full h-full overflow-x-hidden font-inter m-0 md:px-28 md:py-4;
+  }
+  h2,h3{
+    @apply text-TertiarTextColor;
+  }
+}
+@layer utilities{
+  .cardBorder{
+    border: 2px solid rgba(38, 38, 38, 1);
+  }
+  .SelectedOmbre{
+    text-shadow: 0px 0px 50px var(--secondary-text-color);
+  }
+  .LogoOmbre{
+    box-shadow:  0px 0px 50px var(--secondary-text-color);
+  }
+  .ombre{
+    text-shadow: 0px 0px 50px var(--Primary-text-Color);
+  }
+
+  .LogoAnimation{
+    animation: flipHeads 3s ease infinite;
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes flipHeads {
+  from {
+      transform: rotateY(0deg);
+  }
+
+  to {
+      transform: rotateY(1800deg);
   }
 }
