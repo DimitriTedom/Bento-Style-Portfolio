@@ -1,4 +1,5 @@
 import Badge from "./Badge";
+import HeroButtons from "./HeroButtons";
 
 const HeroSection = () => {
   return (
@@ -15,13 +16,15 @@ const HeroSection = () => {
         </div>
         <div>
           <h1 className="font-extrabold text-2xl md:text-4xl mb-4">I'm Zainab Nisa</h1>
-          <h3 className="font-medium text-lg">
+          <h3 className="font-medium text-lg mb-5">
             I design digital products with <br />
             great experience.
           </h3>
+          <HeroButtons/>
         </div>
         {/* <HeroButton content="" icon=""/>
         <HeroButton content="" icon=""/> */}
+      
       </div>
     </div>
   );

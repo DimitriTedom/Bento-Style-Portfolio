@@ -11,7 +11,7 @@ const buttons = [
 const HeroButtons = () => {
   return (
     <div className="flex gap-2">
-      <div className="bg-[rgba(230,_62,_33,_1)] border-[2px_solid_rgba(228,_100,_63,_1)_inset]">Hire me <img src="/Plus.svg" alt="plus(+)" /></div>
+      <div className="bg-[rgba(230,_62,_33,_1)] rounded-xl flex space-x-6 p-4 items-center bo relative"><h4 className="text-lg font-semibold">Hire me </h4><img src="/Plus.svg" alt="plus(+)" className="w-4 h-4"/> <div className="w-[2px] h-full bg-black absolute left-1/2 rounded"></div></div>
     </div>
   )
 }
