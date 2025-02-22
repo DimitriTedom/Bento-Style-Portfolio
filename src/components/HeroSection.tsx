@@ -22,9 +22,6 @@ const HeroSection = () => {
           </h3>
           <HeroButtons/>
         </div>
-        {/* <HeroButton content="" icon=""/>
-        <HeroButton content="" icon=""/> */}
-      
       </div>
     </div>
   );
