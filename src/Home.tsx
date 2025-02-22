@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
+import Section from "./components/Section";
 export default function Home() {
   return (
     <div className="w-full flex flex-col gap-3 h-screen">
@@ -18,6 +19,7 @@ export default function Home() {
       </Helmet>
       <NavBar/>
       <HeroSection/>
+      <Section/>
     </div>
   );
 }

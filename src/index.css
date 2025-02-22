@@ -76,7 +76,6 @@
   }
 }
 
-@layer components{
   @layer components {
     .bo {
       @apply border-[2px] border-[#161616] border-t-[#e4643f] shadow-[0px_0px_15px_rgba(230,62,33,1)];
@@ -84,12 +83,18 @@
     .bo:hover {
       @apply shadow-[0px_0px_15px_3px_rgba(230,62,33,1)];
     }
+    .Container{
+      @apply grid lg:temp;
+    }
   }
-}
+
 
 @layer utilities{
   .cardBorder{
     border: 2px solid rgba(38, 38, 38, 1);
+  }
+  .temp{
+    grid-template-columns: auto auto;
   }
   .SelectedOmbre{
     text-shadow: 0px 0px 50px var(--secondary-text-color);

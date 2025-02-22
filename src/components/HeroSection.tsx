@@ -3,7 +3,7 @@ import HeroButtons from "./HeroButtons";
 
 const HeroSection = () => {
   return (
-    <div className="cardBorder bg-CardBgColor rounded-md py-[22px] px-4 flex flex-col gap-10 md:px-11 md:py-14">
+    <div className="cardBorder bg-CardBgColor rounded-md py-[22px] px-4 flex flex-col gap-10 lg:px-11 lg:py-14">
       <div className="w-[40%] flex flex-col items-center gap-4 md:flex-row-reverse md:w-full md:justify-between">
         <Badge content="AVAILABLE FOR JOB" />
         <h1 className="text-TertiarTextColor font-semibold md:text-2xl">
