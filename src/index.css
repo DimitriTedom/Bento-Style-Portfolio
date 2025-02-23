@@ -84,8 +84,11 @@
       @apply shadow-[0px_0px_15px_3px_rgba(230,62,33,1)];
     }
     .Container{
-      @apply grid lg:temp;
+      @apply grid lg:temp gap-3;
     }
+    /* .grad{
+      background: linear-gradient(200deg, rgba(230, 62, 33, 1) -20%, rgba(51, 19, 14, 0) 40%);
+    } */
   }
 
 
@@ -93,6 +96,12 @@
   .cardBorder{
     border: 2px solid rgba(38, 38, 38, 1);
   }
+  /* .ps{
+    @apply absolute z-[10] w-[30%] h-[4rem] left-[70%] rounded-tr-lg lg:w-[30%];
+    border: 2px solid rgba(230, 62, 33, 1);
+    border-bottom: none;
+    border-left:none ;
+  } */
   .temp{
     grid-template-columns: auto auto;
   }
@@ -110,6 +119,10 @@
     animation: flipHeads 3s ease infinite;
     backface-visibility: hidden;
   }
+  .buble{
+    animation: Bubble 3s linear infinite;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
 }
 
 @keyframes flipHeads {
@@ -119,5 +132,22 @@
 
   to {
       transform: rotateY(1800deg);
+  }
+}
+@keyframes Bubble{
+  0%{
+    transform: scale(0.5);
+  }
+  25%{
+    transform: scale(0.7);
+  }
+  50%{
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(0.5);
   }
 }
