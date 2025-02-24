@@ -83,9 +83,12 @@
     .bo:hover {
       @apply shadow-[0px_0px_15px_3px_rgba(230,62,33,1)];
     }
-    .Container{
+    /* .Container{
       @apply grid lg:temp gap-3;
-    }
+    } */
+     .cardContainer{
+      @apply flex flex-col gap-6 cardBorder bg-CardBgColor py-[20px] px-4 rounded-lg lg:px-11 lg:py-14;
+     }
     /* .grad{
       background: linear-gradient(200deg, rgba(230, 62, 33, 1) -20%, rgba(51, 19, 14, 0) 40%);
     } */
@@ -104,6 +107,9 @@
   } */
   .temp{
     grid-template-columns: auto auto;
+  }
+  .lefted{
+    left: calc(50%-10rem);
   }
   .SelectedOmbre{
     text-shadow: 0px 0px 50px var(--secondary-text-color);
