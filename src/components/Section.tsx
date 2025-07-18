@@ -2,7 +2,6 @@ import Gradient1 from './Gradient1'
 import Gradient2 from './Gradient2'
 import Products from './Products'
 import RecentWork from './RecentWork'
-import './Section.css'
 const Section = () => {
   return (
     <div className="grid lg:temp gap-3">
@@ -16,13 +15,16 @@ const Section = () => {
           <RecentWork/>
         </div>
       </div>
+       
+      <div className='w-full h-full bg-red-700 flex-center'>
 
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-2 flex-1'>
         <Gradient2 content="Product design"/>
         <div className='grid grid-cols-2 gap-3 lg:gap-5'>
           <Gradient1  content="User Experience" />
           <Gradient1  content="NoCode develop"/>
-        </div>
+        </div> 
+      </div>
       </div>
 
       <div className='flex flex-col gap-6 cardBorder bg-CardBgColor pt-[20px] px-4 rounded-lg lg:px-11 lg:pt-14 justify-center'>

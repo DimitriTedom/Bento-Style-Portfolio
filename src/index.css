@@ -99,6 +99,21 @@
   .cardBorder{
     border: 2px solid rgba(38, 38, 38, 1);
   }
+    .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
   /* .ps{
     @apply absolute z-[10] w-[30%] h-[4rem] left-[70%] rounded-tr-lg lg:w-[30%];
     border: 2px solid rgba(230, 62, 33, 1);

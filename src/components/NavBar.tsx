@@ -28,7 +28,7 @@ const NavBar = () => {
   );
 };
 
-function NavLink({ text, color }: { text: string; color: string }) {
+export function NavLink({ text, color }: { text: string; color: string }) {
   return (
     <div className="relative group text-lg">
       {/* Appliquer la couleur du texte via style */}
